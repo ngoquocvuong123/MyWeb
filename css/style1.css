@@ -1,0 +1,62 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f0f8ff;
+}
+
+/* Selector theo thẻ */
+h1 {
+  font-size: 2rem;
+  color: #0066cc;
+}
+
+h2 {
+  color: #004499;
+}
+
+/* Selector theo id */
+#top {
+  background-color: #0066cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+#about {
+  background-color: #e0f0ff;
+  padding: 20px;
+}
+
+/* Selector theo class */
+.hero {
+  padding: 20px;
+  text-align: center;
+}
+
+.about {
+  border-top: 2px solid #0066cc;
+}
+
+/* Selector kết hợp */
+nav a {
+  display: inline-block;
+  margin: 10px;
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #cc4400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
