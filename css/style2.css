@@ -10,169 +10,65 @@ body {
   background-color: #f0f8ff;
 }
 
-/* Header */
+/* Selector theo thẻ */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  color: #004499;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Selector theo class */
 .site-header {
   background-color: #0066cc;
   color: white;
-  padding: 16px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
 }
 
-.brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-/* Nav */
 .main-nav {
-  display: flex;
-  gap: 16px;
+  background-color: #004499;
+  padding: 10px;
 }
 
 .main-nav a {
   color: white;
   text-decoration: none;
+  margin: 0 10px;
   font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 4px;
 }
 
 .main-nav a:hover {
-  background-color: #004499;
+  color: #ffcc00;
 }
 
-/* Hero */
 .hero {
+  padding: 20px;
   text-align: center;
-  padding: 40px 20px;
+}
+
+.about {
+  padding: 20px;
   background-color: #e0f0ff;
-}
-
-#main-title {
-  font-size: 2.5rem;
-  color: #0066cc;
-  margin: 0 0 16px 0;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-.intro {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin: 0 auto 24px auto;
-  max-width: 600px;
-}
-
-.hero img {
-  width: 100%;
-  max-width: 800px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 24px;
-}
-
-.primary-button {
-  display: inline-block;
-  padding: 12px 28px;
-  background-color: #ff6600;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  margin-top: 16px;
-}
-
-.primary-button:hover {
-  background-color: #cc4400;
-}
-
-/* Section chung */
-.section {
-  padding: 40px 24px;
-  margin: 0 auto;
-  max-width: 960px;
-}
-
-h2 {
-  font-size: 1.8rem;
-  color: #004499;
-  margin: 0 0 16px 0;
-  text-align: center;
-}
-
-/* About */
-.about-section p {
-  font-size: 1rem;
-  line-height: 1.8;
-  margin-bottom: 16px;
+  border-top: 2px solid #0066cc;
 }
 
 .topic-list {
-  padding-left: 20px;
   line-height: 2;
 }
 
-/* Card */
-.card-row {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+/* Selector theo id */
+#main-title {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+#about {
   margin-top: 20px;
-}
-
-.feature-card {
-  box-sizing: border-box;
-  border: 1px solid #b0d0f0;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
-  background-color: white;
-  margin: 0;
-}
-
-.feature-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.card-body {
-  padding: 16px;
-}
-
-.card-body h3 {
-  margin: 0 0 10px 0;
-  color: #0066cc;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.card-body p {
-  margin: 0 0 16px 0;
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 8px 18px;
-  background-color: #0066cc;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  border: none;
-}
-
-.btn:hover {
-  background-color: #004499;
 }
