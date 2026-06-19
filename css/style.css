@@ -1,13 +1,31 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f0f8ff;
   font-family: Arial, sans-serif;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   color: #0066cc;
+  font-size: 2rem;
 }
 
 a {
   color: #ff6600;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 20px;
+  background-color: #e0f0ff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
