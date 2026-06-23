@@ -70,7 +70,7 @@ img {
 }
 
 .hero {
-  padding: 80px 8%;
+  padding: 48px 8%;
   color: white;
   background: linear-gradient(135deg, var(--primary), #06b6d4);
 }
@@ -105,46 +105,49 @@ img {
    Chặng 4: Typography, căn chỉnh, line-height
    ---------------------------------------------------------- */
 .section {
-  padding: 56px 8%;
+  padding: 28px 8%;
 }
 
 h1 {
-  font-size: clamp(36px, 6vw, 72px);
-  line-height: 1.05;
+  font-size: clamp(28px, 5vw, 56px);
+  line-height: 1.1;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 26px;
   color: var(--dark);
   text-align: center;
+  margin-bottom: 16px;
 }
 
 p, li {
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.65;
 }
 
 .lead {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 blockquote {
-  font-size: 24px;
+  font-size: 18px;
   font-style: italic;
   text-align: center;
   border-left: 4px solid var(--primary);
-  padding: 16px 24px;
+  padding: 12px 20px;
   background-color: white;
   border-radius: 0 8px 8px 0;
   color: #555;
+  margin: 0;
 }
 
 .eyebrow {
-  font-size: 1rem;
+  font-size: 0.85rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   opacity: 0.85;
+  margin-bottom: 8px;
 }
 
 
@@ -357,6 +360,6 @@ textarea {
 
   .hero,
   .section {
-    padding: 42px 6%;
+    padding: 24px 5%;
   }
 }
