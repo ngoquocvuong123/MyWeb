@@ -20,6 +20,10 @@ if (mainTitle && welcomeText) {
   welcomeText.textContent = "Nội dung này được cập nhật bằng file js/script.js.";
 }
 
+// ============================================================
+// script.js — Du Lịch Nha Trang
+// ============================================================
+
 // --- BÀI 3: Nút Hello ---
 const helloBtn = document.getElementById("helloBtn");
 const helloResult = document.getElementById("helloResult");
