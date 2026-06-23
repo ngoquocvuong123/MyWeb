@@ -588,3 +588,38 @@ body.warm-mode .about-section {
   background-color: #ffedd5 !important;
   color: #431407 !important;
 }
+/* ============================================================
+   BÀI 7: CSS Ô TÌM KIẾM NHANH (QUICK SEARCH)
+   ============================================================ */
+.search-box-container {
+  margin: 15px auto 25px auto;
+  text-align: center;
+  max-width: 400px;
+  padding: 0 15px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px 18px;
+  font-size: 14px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+#searchInput:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.25);
+}
+
+/* Đảm bảo ô tìm kiếm đổi màu chuẩn khi đổi sang giao diện tối (Dark mode) */
+body.dark-mode #searchInput {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #ffffff;
+}
+body.dark-mode #searchInput::placeholder {
+  color: #9ca3af;
+}
