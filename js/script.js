@@ -133,3 +133,39 @@ if (filterButtons.length > 0 && galleryItems.length > 0) {
     });
   });
 }
+// --- BÀI 9: KIỂM TRA FORM LIÊN HỆ TRƯỚC KHI GỬI ---
+const contactForm = document.getElementById("contactForm");
+const fullName = document.getElementById("fullName");
+const email = document.getElementById("email");
+const formMessage = document.getElementById("formMessage");
+
+if (contactForm && fullName && email && formMessage) {
+  contactForm.addEventListener("submit", function (event) {
+    // Ngăn chặn hành vi tải lại trang mặc định của Form khi bấm submit
+    event.preventDefault();
+
+    const nameValue = fullName.value.trim();
+    const emailValue = email.value.trim();
+
+    // 1. Kiểm tra xem ô Họ tên có bị bỏ trống không
+    if (nameValue === "") {
+      formMessage.textContent = "Vui lòng nhập họ tên.";
+      formMessage.style.color = "red";
+      return; // Dừng xử lý tiếp tục
+    }
+
+    // 2. Kiểm tra ô Email có trống hoặc thiếu ký tự '@' không
+    if (emailValue === "" || !emailValue.includes("@")) {
+      formMessage.textContent = "Vui lòng nhập email hợp lệ (phải có ký tự @).";
+      formMessage.style.color = "red";
+      return; // Dừng xử lý tiếp tục
+    }
+
+    // 3. Nếu mọi dữ liệu nhập vào đều hợp lệ
+    formMessage.textContent = "Thông tin đã hợp lệ. Cảm ơn bạn!";
+    formMessage.style.color = "green";
+    
+    // Tùy chọn: Xóa sạch dữ liệu trong form sau khi gửi thành công
+    contactForm.reset();
+  });
+}
